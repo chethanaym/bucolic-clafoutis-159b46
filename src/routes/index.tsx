@@ -8,7 +8,6 @@ import {
   MessageCircle,
   Puzzle,
   ShieldCheck,
-  Sparkles,
   UsersRound,
 } from 'lucide-react'
 
@@ -45,9 +44,11 @@ function HomePage() {
     <main className="site-shell">
       <nav className="topbar" aria-label="Primary navigation">
         <a className="brand" href="#home" aria-label="Mindful Horizons home">
-          <span className="brand-mark">
-            <Sparkles size={18} aria-hidden="true" />
-          </span>
+          <img
+            src="/logo-transparent.png"
+            alt="Mindful Horizons logo"
+            className="h-8 md:h-10 w-auto"
+          />
           <span>Mindful Horizons</span>
         </a>
         <div className="nav-links">
