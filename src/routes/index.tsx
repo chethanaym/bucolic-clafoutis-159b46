@@ -5,6 +5,7 @@ import {
   CalendarDays,
   CheckCircle2,
   HeartHandshake,
+  MapPin,
   MessageCircle,
   Puzzle,
   ShieldCheck,
@@ -157,6 +158,34 @@ function HomePage() {
           <a href="tel:+919483161006" className="contact-link">
             <CalendarDays size={20} aria-hidden="true" />
             +91 94831 61006
+          </a>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Modern+Psych+Therapy+%236+4th+Main+MS+Ramaiah+City+JP+Nagar+8th+Phase+Bangalore+560076"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open clinic address in Google Maps"
+            className="contact-link"
+            style={{ alignItems: 'flex-start' }}
+          >
+            <MapPin size={20} aria-hidden="true" style={{ marginTop: '2px' }} />
+            <span>
+              <span style={{ display: 'block' }}>Modern Psych Therapy</span>
+              <span
+                style={{
+                  display: 'block',
+                  fontWeight: 600,
+                  fontSize: '0.875rem',
+                  color: '#596d64',
+                  lineHeight: 1.45,
+                  marginTop: '3px',
+                }}
+              >
+                #6, 4th Main<br />
+                MS Ramaiah City<br />
+                JP Nagar 8th Phase<br />
+                Bangalore 560076
+              </span>
+            </span>
           </a>
           <div className="note">
             <HeartHandshake size={20} aria-hidden="true" />
