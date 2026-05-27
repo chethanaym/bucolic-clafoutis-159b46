@@ -169,21 +169,17 @@ function HomePage() {
           >
             <MapPin size={20} aria-hidden="true" style={{ marginTop: '2px' }} />
             <span>
-              <span style={{ display: 'block' }}>Modern Psych Therapy</span>
+              <span style={{ display: 'block' }}>Visit our clinic</span>
               <span
                 style={{
                   display: 'block',
                   fontWeight: 600,
                   fontSize: '0.875rem',
                   color: '#596d64',
-                  lineHeight: 1.45,
                   marginTop: '3px',
                 }}
               >
-                #6, 4th Main<br />
-                MS Ramaiah City<br />
-                JP Nagar 8th Phase<br />
-                Bangalore 560076
+                Get directions →
               </span>
             </span>
           </a>
