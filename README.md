@@ -1,6 +1,6 @@
-# Mindful Horizons
+# Modern Psych Therapy
 
-Mindful Horizons is a one-page website for mental wellbeing, psychological health, and special needs support. It is designed for a compassionate care provider that needs a polished landing page with service information, an approachable care process, and direct contact options.
+Modern Psych Therapy is a one-page website for mental wellbeing, psychological health, and special needs support. It is designed for a compassionate care provider that needs a polished landing page with service information, an approachable care process, and direct contact options.
 
 ## Key Technologies
 

@@ -43,13 +43,13 @@ function HomePage() {
   return (
     <main className="site-shell">
       <nav className="topbar" aria-label="Primary navigation">
-        <a className="brand" href="#home" aria-label="Mindful Horizons home">
+        <a className="brand" href="#home" aria-label="Modern Psych Therapy home">
           <img
             src="/logo-transparent.png"
-            alt="Mindful Horizons logo"
+            alt="Modern Psych Therapy logo"
             className="h-8 md:h-10 w-auto"
           />
-          <span>Mindful Horizons</span>
+          <span>Modern Psych Therapy</span>
         </a>
         <div className="nav-links">
           <a href="#services">Services</a>
@@ -63,7 +63,7 @@ function HomePage() {
           <p className="eyebrow">Mental wellbeing and special needs care</p>
           <h1>Support that meets people where they are.</h1>
           <p className="hero-text">
-            Mindful Horizons offers compassionate psychological health services
+            Modern Psych Therapy offers compassionate psychological health services
             and special needs support for individuals, families, schools, and
             care teams.
           </p>
@@ -150,13 +150,13 @@ function HomePage() {
           </p>
         </div>
         <div className="contact-actions">
-          <a href="mailto:hello@mindfulhorizons.example" className="contact-link">
+          <a href="mailto:modernpsychtherapy@gmail.com" className="contact-link">
             <MessageCircle size={20} aria-hidden="true" />
-            hello@mindfulhorizons.example
+            modernpsychtherapy@gmail.com
           </a>
-          <a href="tel:+15550172488" className="contact-link">
+          <a href="tel:+919483161006" className="contact-link">
             <CalendarDays size={20} aria-hidden="true" />
-            +1 (555) 017-2488
+            +91 94831 61006
           </a>
           <div className="note">
             <HeartHandshake size={20} aria-hidden="true" />

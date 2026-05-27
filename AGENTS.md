@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Mindful Horizons is a one-page public website for mental wellbeing, psychological health, and special needs support. It presents service pathways, a simple care approach, and direct contact options in a calm, accessible layout.
+Modern Psych Therapy is a one-page public website for mental wellbeing, psychological health, and special needs support. It presents service pathways, a simple care approach, and direct contact options in a calm, accessible layout.
 
 ## Tech Stack
 
@@ -39,3 +39,14 @@ The template product catalog routes were removed because this project is a stand
 - Avoid promising clinical outcomes or replacing emergency guidance.
 - Prefer small static content arrays inside the page unless content management or persistence is requested.
 - Do not add persistence unless the feature requires it; if persistence is needed, use Netlify platform storage primitives.
+
+## Brand
+- Name: Modern Psych Therapy
+- Logo: profile silhouette with growing leaf branches, gradient teal → pink → purple
+- Email: modernpsychtherapy@gmail.com
+- Primary brand colors:
+  - Navy background: #0D003C
+  - Teal accent: ~#5DD9D1
+  - Pink/magenta: ~#E91E80
+  - Purple: ~#7A2BE0
+- Tone: calm, compassionate, professional. No clinical jargon, no salesy language.

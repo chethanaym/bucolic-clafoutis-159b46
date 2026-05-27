@@ -13,7 +13,7 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Mindful Horizons | Mental Wellbeing & Special Needs Support',
+        title: 'Modern Psych Therapy | Mental Wellbeing & Special Needs Support',
       },
       {
         name: 'description',
@@ -22,16 +22,18 @@ export const Route = createRootRoute({
       },
       { name: 'theme-color', content: '#0D003C' },
       { property: 'og:type', content: 'website' },
-      { property: 'og:title', content: 'Mindful Horizons' },
+      { property: 'og:site_name', content: 'Modern Psych Therapy' },
+      { property: 'og:title', content: 'Modern Psych Therapy' },
+      { property: 'og:url', content: 'https://modernpsychtherapy.com' },
       {
         property: 'og:description',
         content:
           'A compassionate one-page wellbeing website for mental health guidance, psychological support, and special needs services.',
       },
-      // TODO: replace with absolute URL once the domain is live
-      { property: 'og:image', content: '/logo-dark-square.png' },
+      { property: 'og:image', content: 'https://modernpsychtherapy.com/logo-dark-square.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:image', content: '/logo-dark-square.png' },
+      { name: 'twitter:title', content: 'Modern Psych Therapy' },
+      { name: 'twitter:image', content: 'https://modernpsychtherapy.com/logo-dark-square.png' },
     ],
     links: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
