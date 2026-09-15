@@ -12,6 +12,8 @@ import {
   UsersRound,
 } from 'lucide-react'
 
+import { SiteFooter } from '../legal'
+
 export const Route = createFileRoute('/')({
   component: HomePage,
 })
@@ -192,6 +194,8 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <SiteFooter />
     </main>
   )
 }
