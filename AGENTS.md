@@ -20,6 +20,10 @@ Modern Psych Therapy is a one-page public website for mental wellbeing, psycholo
 ```
 src/routes/__root.tsx  # Root document, global metadata, and shared styles import
 src/routes/index.tsx   # Complete one-page website content and structure
+src/routes/terms.tsx   # Terms & Conditions
+src/routes/refunds.tsx # Refunds & Cancellations policy
+src/routes/privacy.tsx # Privacy policy
+src/legal.tsx          # Shared layout and footer for the policy pages, plus clinic contact details
 src/styles.css         # Global visual system, layout, responsive styles, and interaction states
 public/                # Static assets served by the site
 netlify.toml           # Netlify build and dev configuration
@@ -27,7 +31,9 @@ netlify.toml           # Netlify build and dev configuration
 
 ## Architecture
 
-The site is intentionally small. The homepage route contains the complete page structure and uses static arrays for repeatable service and process content. Styling lives in `src/styles.css` so the page can use expressive layout rules that would be awkward as long utility class strings.
+The site is intentionally small. The homepage route contains the complete page structure and uses static arrays for repeatable service and process content.
+
+Three policy routes sit alongside it. They exist because a payment gateway (Razorpay) requires a merchant site to publish terms, a refund and cancellation policy, and a privacy policy, all reachable from the site. They share a layout and a footer from `src/legal.tsx`; clinic contact details live there as a single constant so they cannot drift between pages. Styling lives in `src/styles.css` so the page can use expressive layout rules that would be awkward as long utility class strings.
 
 The template product catalog routes were removed because this project is a standalone one-page website, not a multi-page product site.
 

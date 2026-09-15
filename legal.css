@@ -1,0 +1,106 @@
+/* Legal pages: terms, refunds, privacy */
+.legal {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  padding: 34px 0 10px;
+  color: #3d4f48;
+}
+.legal-head {
+  margin-bottom: 34px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid rgba(67, 84, 76, 0.16);
+}
+.legal h1 {
+  margin: 0 0 14px;
+  color: #23322d;
+  font-size: clamp(2rem, 4.6vw, 2.7rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+}
+.legal-intro {
+  margin: 0 0 16px;
+  color: #4f635a;
+  font-size: 1.08rem;
+}
+.legal-updated {
+  margin: 0;
+  color: #7c8d85;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+.legal section {
+  margin-bottom: 30px;
+}
+.legal h2 {
+  margin: 0 0 12px;
+  color: #23322d;
+  font-size: 1.22rem;
+  line-height: 1.25;
+}
+.legal p {
+  margin: 0 0 14px;
+  line-height: 1.68;
+}
+.legal p:last-child {
+  margin-bottom: 0;
+}
+.legal ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  line-height: 1.68;
+}
+.legal li {
+  margin-bottom: 8px;
+}
+.legal a {
+  color: #5b806d;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.legal a:hover,
+.legal a:focus-visible {
+  color: #3f6150;
+}
+
+/* Footer, shown on every page */
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 56px;
+  padding: 26px 24px;
+  border-radius: 26px;
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 14px 34px rgba(64, 77, 68, 0.07);
+  color: #596d64;
+  font-size: 0.9rem;
+}
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 42ch;
+}
+.footer-brand strong {
+  color: #23322d;
+  font-weight: 800;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  font-weight: 700;
+}
+.site-footer a {
+  color: #4f635a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: #273b34;
+}
