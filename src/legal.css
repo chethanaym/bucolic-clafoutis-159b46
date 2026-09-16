@@ -104,3 +104,41 @@
 .site-footer a:focus-visible {
   color: #273b34;
 }
+
+/* Payments page */
+.pay-button {
+  display: flex;
+  justify-content: center;
+  min-height: 56px;
+  margin: 26px 0 8px;
+  padding: 20px;
+  border-radius: 22px;
+  background: #fffaf1;
+  box-shadow: 0 14px 34px rgba(64, 77, 68, 0.08);
+}
+.pay-notes {
+  display: grid;
+  gap: 14px;
+}
+.pay-note {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 250, 241, 0.7);
+}
+.pay-note svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #5b806d;
+}
+.pay-note h3 {
+  margin: 0 0 4px;
+  color: #23322d;
+  font-size: 1rem;
+}
+.pay-note p {
+  margin: 0;
+  font-size: 0.95rem;
+}

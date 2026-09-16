@@ -29,6 +29,7 @@ export function SiteFooter() {
         </span>
       </div>
       <nav className="footer-links" aria-label="Policies">
+        <Link to="/pay">Pay for a session</Link>
         <Link to="/terms">Terms &amp; Conditions</Link>
         <Link to="/refunds">Refunds &amp; Cancellations</Link>
         <Link to="/privacy">Privacy Policy</Link>
