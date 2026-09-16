@@ -1,12 +1,15 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { Link, createFileRoute } from '@tanstack/react-router'
+
+import { BookingPanel, SESSION_FEE, ScrollLink } from '../booking'
+import { CLINIC } from '../legal'
 import {
   ArrowRight,
   Brain,
-  CalendarDays,
   CheckCircle2,
   HeartHandshake,
-  MapPin,
+  IndianRupee,
   MessageCircle,
+  Phone,
   Puzzle,
   ShieldCheck,
   UsersRound,
@@ -46,18 +49,21 @@ function HomePage() {
   return (
     <main className="site-shell">
       <nav className="topbar" aria-label="Primary navigation">
-        <a className="brand" href="#home" aria-label="Modern Psych Therapy home">
+        <ScrollLink to="home" className="brand">
           <img
             src="/logo-transparent.png"
             alt="Modern Psych Therapy logo"
             className="h-8 md:h-10 w-auto"
           />
           <span>Modern Psych Therapy</span>
-        </a>
+        </ScrollLink>
         <div className="nav-links">
-          <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#contact">Contact</a>
+          <ScrollLink to="services">Services</ScrollLink>
+          <ScrollLink to="approach">Approach</ScrollLink>
+          <ScrollLink to="contact">Contact</ScrollLink>
+          <ScrollLink to="book" className="nav-cta">
+            Book a consultation
+          </ScrollLink>
         </div>
       </nav>
 
@@ -71,26 +77,21 @@ function HomePage() {
             care teams.
           </p>
           <div className="hero-actions">
-            <a className="primary-action" href="#contact">
+            <ScrollLink to="book" className="primary-action">
               Book a consultation
               <ArrowRight size={18} aria-hidden="true" />
-            </a>
-            <a className="secondary-action" href="#services">
+            </ScrollLink>
+            <ScrollLink to="services" className="secondary-action">
               Explore services
-            </a>
+            </ScrollLink>
           </div>
+          <p className="hero-assurance">
+            <ShieldCheck size={17} aria-hidden="true" />
+            Trauma-aware, inclusive, and person-centered
+          </p>
         </div>
 
-        <div className="hero-visual" aria-label="A welcoming therapy space">
-          <img
-            src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&w=1100&q=82"
-            alt="Two people seated in a calm counselling conversation"
-          />
-          <div className="care-card">
-            <ShieldCheck size={22} aria-hidden="true" />
-            <span>Trauma-aware, inclusive, and person-centered</span>
-          </div>
-        </div>
+        <BookingPanel />
       </section>
 
       <section className="trust-band" aria-label="Care principles">
@@ -151,40 +152,26 @@ function HomePage() {
             Share what kind of support is needed, ask about accessibility, or
             request guidance for a family member, student, or care team.
           </p>
+          <div className="hero-actions">
+            <ScrollLink to="book" className="primary-action">
+              Book a consultation
+              <ArrowRight size={18} aria-hidden="true" />
+            </ScrollLink>
+          </div>
         </div>
         <div className="contact-actions">
-          <a href="mailto:modernpsychtherapy@gmail.com" className="contact-link">
+          <a href={`mailto:${CLINIC.email}`} className="contact-link">
             <MessageCircle size={20} aria-hidden="true" />
-            modernpsychtherapy@gmail.com
+            {CLINIC.email}
           </a>
           <a href="tel:+919483161006" className="contact-link">
-            <CalendarDays size={20} aria-hidden="true" />
-            +91 94831 61006
+            <Phone size={20} aria-hidden="true" />
+            {CLINIC.phones[0]} · {CLINIC.phones[1]}
           </a>
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=Modern+Psych+Therapy+%236+4th+Main+MS+Ramaiah+City+JP+Nagar+8th+Phase+Bangalore+560076"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Open clinic address in Google Maps"
-            className="contact-link"
-            style={{ alignItems: 'flex-start' }}
-          >
-            <MapPin size={20} aria-hidden="true" style={{ marginTop: '2px' }} />
-            <span>
-              <span style={{ display: 'block' }}>Visit our clinic</span>
-              <span
-                style={{
-                  display: 'block',
-                  fontWeight: 600,
-                  fontSize: '0.875rem',
-                  color: '#596d64',
-                  marginTop: '3px',
-                }}
-              >
-                Get directions →
-              </span>
-            </span>
-          </a>
+          <Link to="/pay" className="contact-link">
+            <IndianRupee size={20} aria-hidden="true" />
+            Pay for a session · {SESSION_FEE}
+          </Link>
           <div className="note">
             <HeartHandshake size={20} aria-hidden="true" />
             <span>

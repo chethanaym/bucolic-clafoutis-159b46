@@ -55,7 +55,7 @@ function TermsPage() {
       <section>
         <h2>How sessions are delivered</h2>
         <p>
-          Sessions typically run 45 to 60 minutes and are by appointment. They
+          Sessions run one hour and are by appointment. They
           take place either in person at the clinic address above, or online by
           secure video call, as agreed with you when the appointment is made.
           Initial consultations and assessment sessions may run longer.

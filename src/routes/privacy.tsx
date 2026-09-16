@@ -32,6 +32,12 @@ function PrivacyPage() {
           standard technical request data such as IP address and browser type for
           security and delivery.
         </p>
+        <p>
+          The one exception is the payments page. Opening it loads Razorpay's
+          payment button from Razorpay's own servers, which means your browser
+          contacts them and they may set cookies, under their privacy policy.
+          Nothing from Razorpay loads anywhere else on this site.
+        </p>
       </section>
 
       <section>
@@ -55,7 +61,8 @@ function PrivacyPage() {
           on Razorpay's systems and are processed under their privacy policy. We
           never see or store your full payment details — we receive only a
           confirmation that a payment succeeded, the amount, and a reference we
-          can use for a refund.
+          can use for a refund. Paying is entirely optional: if you would rather
+          not use Razorpay, ask us and we will arrange another way.
         </p>
       </section>
 
