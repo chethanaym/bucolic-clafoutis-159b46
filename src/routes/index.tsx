@@ -18,6 +18,9 @@ import {
 import { SiteFooter } from '../legal'
 
 export const Route = createFileRoute('/')({
+  head: () => ({
+    links: [{ rel: 'canonical', href: 'https://modernpsychtherapy.com/' }],
+  }),
   component: HomePage,
 })
 
