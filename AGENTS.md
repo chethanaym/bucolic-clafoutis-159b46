@@ -26,6 +26,12 @@ src/routes/privacy.tsx # Privacy policy
 src/routes/pay.tsx     # Razorpay payment button, kept off every other page on purpose
 src/booking.tsx        # Booking panel, Calendly hand-off, and the ScrollLink used by the nav
 src/legal.tsx          # Shared layout and footer for the policy pages, plus clinic contact details
+src/routes/blog.index.tsx, src/routes/blog.$slug.tsx  # Blog list and article pages
+src/blog.tsx           # Loads content/blog/*.md, renders Markdown, blog page shell
+scripts/posts.mjs      # Post frontmatter parser shared by the site and build-feeds.mjs
+scripts/build-feeds.mjs # Writes public/sitemap.xml and public/rss.xml before vite build
+content/blog/          # One Markdown file per blog post
+docs/blog/             # Blog STYLE_GUIDE.md (voice, safety, SEO rules) and TOPICS.md backlog
 src/styles.css         # Global visual system, layout, responsive styles, and interaction states
 public/                # Static assets served by the site
 netlify.toml           # Netlify build and dev configuration
@@ -49,6 +55,11 @@ the privacy notice's "browsing collects nothing about you" claim true for the re
 the site. Razorpay ships the button as a `<script>` that injects itself into the
 surrounding `<form>`; React will not run a `<script>` written in JSX, so the element is
 created and appended in an effect. Styling lives in `src/styles.css` so the page can use expressive layout rules that would be awkward as long utility class strings.
+
+The blog is file-based: each post is `content/blog/<slug>.md` with frontmatter,
+bundled with `import.meta.glob`, so publishing needs no CMS or database. Posts dated
+in the future stay hidden until their date. A weekly scheduled agent opens one post
+PR per week following `docs/blog/STYLE_GUIDE.md`; a human reviews and merges it.
 
 The template product catalog routes were removed because this project is a standalone one-page website, not a multi-page product site.
 

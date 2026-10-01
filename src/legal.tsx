@@ -28,7 +28,8 @@ export function SiteFooter() {
           <a href="tel:+919483161006">{CLINIC.phones[0]}</a>
         </span>
       </div>
-      <nav className="footer-links" aria-label="Policies">
+      <nav className="footer-links" aria-label="Site links">
+        <Link to="/blog">Blog</Link>
         <Link to="/pay">Pay for a session</Link>
         <Link to="/terms">Terms &amp; Conditions</Link>
         <Link to="/refunds">Refunds &amp; Cancellations</Link>
