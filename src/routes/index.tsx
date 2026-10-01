@@ -61,6 +61,7 @@ function HomePage() {
           <ScrollLink to="services">Services</ScrollLink>
           <ScrollLink to="approach">Approach</ScrollLink>
           <ScrollLink to="contact">Contact</ScrollLink>
+          <Link to="/blog">Blog</Link>
           <ScrollLink to="book" className="nav-cta">
             Book a consultation
           </ScrollLink>

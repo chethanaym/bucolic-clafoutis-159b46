@@ -9,7 +9,7 @@ Modern Psych Therapy is a one-page website for mental wellbeing, psychological h
 - Vite
 - Tailwind CSS 4 with custom global CSS
 - lucide-react icons
-- Netlify deployment configuration
+- Cloudflare Workers deployment (Workers Builds from GitHub)
 
 ## Project Structure
 
@@ -29,4 +29,4 @@ npm install
 npm run dev
 ```
 
-The Vite development server runs on port 3000 by default. On Netlify, the configured build command is `npm run build`.
+The Vite development server runs on port 3000 by default. Cloudflare Workers Builds runs `npm run build` and deploys with Wrangler using `wrangler.jsonc`; `npm run preview` serves the built Worker locally.

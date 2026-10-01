@@ -13,7 +13,7 @@ Modern Psych Therapy is a one-page public website for mental wellbeing, psycholo
 | Build | Vite |
 | Styling | Tailwind CSS 4 import plus custom global CSS |
 | Icons | lucide-react |
-| Deployment | Netlify |
+| Deployment | Cloudflare Workers (Workers Builds from GitHub) |
 
 ## Key Files
 
@@ -26,9 +26,15 @@ src/routes/privacy.tsx # Privacy policy
 src/routes/pay.tsx     # Razorpay payment button, kept off every other page on purpose
 src/booking.tsx        # Booking panel, Calendly hand-off, and the ScrollLink used by the nav
 src/legal.tsx          # Shared layout and footer for the policy pages, plus clinic contact details
+src/routes/blog.index.tsx, src/routes/blog.$slug.tsx  # Blog list and article pages
+src/blog.tsx           # Loads content/blog/*.md, renders Markdown, blog page shell
+scripts/posts.mjs      # Post frontmatter parser shared by the site and build-feeds.mjs
+scripts/build-feeds.mjs # Writes public/sitemap.xml and public/rss.xml before vite build
+content/blog/          # One Markdown file per blog post
+docs/blog/             # Blog STYLE_GUIDE.md (voice, safety, SEO rules) and TOPICS.md backlog
 src/styles.css         # Global visual system, layout, responsive styles, and interaction states
 public/                # Static assets served by the site
-netlify.toml           # Netlify build and dev configuration
+wrangler.jsonc         # Cloudflare Worker config; `name` must match the dashboard Worker
 ```
 
 ## Architecture
@@ -50,6 +56,11 @@ the site. Razorpay ships the button as a `<script>` that injects itself into the
 surrounding `<form>`; React will not run a `<script>` written in JSX, so the element is
 created and appended in an effect. Styling lives in `src/styles.css` so the page can use expressive layout rules that would be awkward as long utility class strings.
 
+The blog is file-based: each post is `content/blog/<slug>.md` with frontmatter,
+bundled with `import.meta.glob`, so publishing needs no CMS or database. Posts dated
+in the future stay hidden until their date. A weekly scheduled agent opens one post
+PR per week following `docs/blog/STYLE_GUIDE.md`; a human reviews and merges it.
+
 The template product catalog routes were removed because this project is a standalone one-page website, not a multi-page product site.
 
 ## Coding Conventions
@@ -59,7 +70,7 @@ The template product catalog routes were removed because this project is a stand
 - Keep copy clear, supportive, and careful around mental health topics.
 - Avoid promising clinical outcomes or replacing emergency guidance.
 - Prefer small static content arrays inside the page unless content management or persistence is requested.
-- Do not add persistence unless the feature requires it; if persistence is needed, use Netlify platform storage primitives.
+- Do not add persistence unless the feature requires it; if persistence is needed, use Cloudflare storage (KV, D1 or R2) bound in `wrangler.jsonc`.
 
 ## Brand
 - Name: Modern Psych Therapy
