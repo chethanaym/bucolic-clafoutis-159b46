@@ -13,7 +13,7 @@ Modern Psych Therapy is a one-page public website for mental wellbeing, psycholo
 | Build | Vite |
 | Styling | Tailwind CSS 4 import plus custom global CSS |
 | Icons | lucide-react |
-| Deployment | Netlify |
+| Deployment | Cloudflare Workers (Workers Builds from GitHub) |
 
 ## Key Files
 
@@ -34,7 +34,7 @@ content/blog/          # One Markdown file per blog post
 docs/blog/             # Blog STYLE_GUIDE.md (voice, safety, SEO rules) and TOPICS.md backlog
 src/styles.css         # Global visual system, layout, responsive styles, and interaction states
 public/                # Static assets served by the site
-netlify.toml           # Netlify build and dev configuration
+wrangler.jsonc         # Cloudflare Worker config; `name` must match the dashboard Worker
 ```
 
 ## Architecture
@@ -70,7 +70,7 @@ The template product catalog routes were removed because this project is a stand
 - Keep copy clear, supportive, and careful around mental health topics.
 - Avoid promising clinical outcomes or replacing emergency guidance.
 - Prefer small static content arrays inside the page unless content management or persistence is requested.
-- Do not add persistence unless the feature requires it; if persistence is needed, use Netlify platform storage primitives.
+- Do not add persistence unless the feature requires it; if persistence is needed, use Cloudflare storage (KV, D1 or R2) bound in `wrangler.jsonc`.
 
 ## Brand
 - Name: Modern Psych Therapy

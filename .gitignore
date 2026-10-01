@@ -1,8 +1,14 @@
 node_modules/
 dist/
-.netlify/
 package-lock.json
 src/routeTree.gen.ts
 # generated at build time by scripts/build-feeds.mjs
 public/sitemap.xml
 public/rss.xml
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
