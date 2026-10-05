@@ -11,7 +11,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 - [ ] Night-time fears and nightmares: how to reassure a child
 
 ## Nutrition
-- [ ] Balanced plates for Indian kids: a simple guide (ICMR-NIN)
+- [x] Balanced plates for Indian kids: a simple guide (ICMR-NIN) → balanced-plate-indian-kids (2026-10-05)
 - [ ] Healthy tiffin ideas that children actually eat
 - [ ] Fussy eating: what is normal and what helps
 - [ ] Sugar and children: how much is too much
