@@ -30,7 +30,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 - [ ] Talking to children about worrying news
 
 ## Screens, play and activity
-- [ ] Screen time guidelines by age (WHO / AAP)
+- [x] Screen time guidelines by age (WHO / AAP) → screen-time-guidelines-children (2026-10-12)
 - [ ] Why unstructured play matters
 - [ ] Outdoor time and children's mood
 - [ ] Physical activity: how much do kids need?
