@@ -4,6 +4,7 @@
 - 2026-10-01: Added a canonical link to the homepage so search engines treat https://modernpsychtherapy.com/ as the one official address.
 
 - 2026-10-08: Added a share image (og:image) and Twitter card tags to the blog index and every article, so links shared on WhatsApp, Facebook and X show the logo preview.
+- 2026-10-15: Advertised the blog's RSS feed on every page (not only the blog index), so feed readers and search engines can discover new articles from the homepage.
 
 ## Suggestions (need the owner's decision, ranked)
 1. Set up Google Search Console and Bing Webmaster Tools, and submit `/sitemap.xml`.
