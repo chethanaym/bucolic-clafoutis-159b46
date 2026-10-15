@@ -21,12 +21,6 @@ export const Route = createFileRoute('/blog/')({
     ],
     links: [
       { rel: 'canonical', href: `${SITE_URL}/blog` },
-      {
-        rel: 'alternate',
-        type: 'application/rss+xml',
-        title: 'Modern Psych Therapy Blog',
-        href: '/rss.xml',
-      },
     ],
   }),
 })
