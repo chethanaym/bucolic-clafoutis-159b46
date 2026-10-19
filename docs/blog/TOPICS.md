@@ -33,7 +33,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 - [x] Screen time guidelines by age (WHO / AAP) → screen-time-guidelines-children (2026-10-12)
 - [ ] Why unstructured play matters
 - [ ] Outdoor time and children's mood
-- [ ] Physical activity: how much do kids need?
+- [x] Physical activity: how much do kids need? → physical-activity-children-need (2026-10-19)
 
 ## Family life and parenting
 - [ ] Positive discipline without shouting
