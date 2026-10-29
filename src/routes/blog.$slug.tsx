@@ -33,6 +33,7 @@ export const Route = createFileRoute('/blog/$slug')({
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: post.title },
         { name: 'twitter:description', content: post.description },
+        { name: 'twitter:image', content: `${SITE_URL}/logo-dark-square.png` },
       ],
       links: [{ rel: 'canonical', href: url }],
       scripts: [
@@ -51,6 +52,8 @@ export const Route = createFileRoute('/blog/$slug')({
               name: 'Modern Psych Therapy',
               logo: { '@type': 'ImageObject', url: `${SITE_URL}/icon-512.png` },
             },
+            image: `${SITE_URL}/logo-dark-square.png`,
+            inLanguage: 'en-IN',
             mainEntityOfPage: url,
             keywords: post.tags.join(', '),
           }),
