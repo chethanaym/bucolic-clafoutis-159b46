@@ -30,6 +30,7 @@ export const Route = createFileRoute('/blog/$slug')({
         { property: 'og:url', content: url },
         { property: 'og:image', content: `${SITE_URL}/logo-dark-square.png` },
         { property: 'article:published_time', content: post.date },
+        { property: 'article:modified_time', content: post.updated },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:title', content: post.title },
         { name: 'twitter:description', content: post.description },

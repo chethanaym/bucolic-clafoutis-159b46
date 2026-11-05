@@ -18,6 +18,9 @@ export const Route = createFileRoute('/blog/')({
       { property: 'og:url', content: `${SITE_URL}/blog` },
       { property: 'og:image', content: `${SITE_URL}/logo-dark-square.png` },
       { name: 'twitter:card', content: 'summary' },
+      { name: 'twitter:title', content: TITLE },
+      { name: 'twitter:description', content: DESCRIPTION },
+      { name: 'twitter:image', content: `${SITE_URL}/logo-dark-square.png` },
     ],
     links: [
       { rel: 'canonical', href: `${SITE_URL}/blog` },

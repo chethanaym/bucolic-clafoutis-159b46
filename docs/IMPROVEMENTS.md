@@ -6,6 +6,7 @@
 - 2026-10-08: Added a share image (og:image) and Twitter card tags to the blog index and every article, so links shared on WhatsApp, Facebook and X show the logo preview.
 - 2026-10-15: Advertised the blog's RSS feed on every page (not only the blog index), so feed readers and search engines can discover new articles from the homepage.
 - 2026-10-29: Added `image` and `inLanguage` to each article's structured data and a Twitter card image, so Google and social apps can show a picture with every article.
+- 2026-11-05: Added a last-updated date (`article:modified_time`) to each article and full Twitter card tags to the blog index, so shared links and search engines get complete, consistent previews.
 
 ## Suggestions (need the owner's decision, ranked)
 1. Set up Google Search Console and Bing Webmaster Tools, and submit `/sitemap.xml`.
