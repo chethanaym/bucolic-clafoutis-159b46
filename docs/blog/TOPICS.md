@@ -37,7 +37,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 
 ## Family life and parenting
 - [ ] Positive discipline without shouting
-- [ ] Quality time when you're busy: 10-minute connection ideas
+- [x] Quality time when you're busy: 10-minute connection ideas → ten-minute-connection-ideas-parents (2026-11-09)
 - [ ] Sibling rivalry: calm ways to respond
 - [ ] Routines that reduce morning chaos
 - [ ] Parent self-care: you can't pour from an empty cup
