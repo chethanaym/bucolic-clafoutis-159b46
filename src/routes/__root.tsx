@@ -31,6 +31,8 @@ export const Route = createRootRoute({
           'A compassionate one-page wellbeing website for mental health guidance, psychological support, and special needs services.',
       },
       { property: 'og:image', content: 'https://modernpsychtherapy.com/logo-dark-square.png' },
+      { property: 'og:image:alt', content: 'Modern Psych Therapy logo' },
+      { property: 'og:locale', content: 'en_IN' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:title', content: 'Modern Psych Therapy' },
       { name: 'twitter:image', content: 'https://modernpsychtherapy.com/logo-dark-square.png' },
