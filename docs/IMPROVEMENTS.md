@@ -7,6 +7,7 @@
 - 2026-10-15: Advertised the blog's RSS feed on every page (not only the blog index), so feed readers and search engines can discover new articles from the homepage.
 - 2026-10-22: Added breadcrumb markup (Home › Blog › article) to the blog index and every article, so Google can show the page path in search results.
 - 2026-10-29: Added `image` and `inLanguage` to each article's structured data and a Twitter card image, so Google and social apps can show a picture with every article.
+- 2026-11-05: Added a last-updated date (`article:modified_time`) to each article and full Twitter card tags to the blog index, so shared links and search engines get complete, consistent previews.
 - 2026-11-12: Added the share-image description (`og:image:alt`) and language/region (`og:locale`, English – India) to the site-wide social-share tags.
 
 ## Suggestions (need the owner's decision, ranked)
