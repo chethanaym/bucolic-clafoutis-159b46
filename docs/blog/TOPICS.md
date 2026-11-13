@@ -14,7 +14,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 - [x] Balanced plates for Indian kids: a simple guide (ICMR-NIN) → balanced-plate-indian-kids (2026-10-05)
 - [ ] Healthy tiffin ideas that children actually eat
 - [x] Fussy eating: what is normal and what helps → fussy-eating-children (2026-10-26)
-- [ ] Sugar and children: how much is too much
+- [x] Sugar and children: how much is too much → sugar-and-children (2026-11-02)
 - [ ] Water and hydration for kids in hot weather
 - [ ] Breakfast and concentration at school
 - [ ] Food and mood: how diet affects children's emotions
