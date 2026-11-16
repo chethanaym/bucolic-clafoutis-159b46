@@ -22,7 +22,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 ## Emotional wellbeing and mental peace
 - [ ] Simple mindfulness and breathing exercises for kids
 - [ ] Helping children name and handle big feelings
-- [ ] Exam stress: how parents can help
+- [x] Exam stress: how parents can help → exam-stress-parents-help (2026-11-16)
 - [ ] Anxiety in children: everyday signs and gentle support
 - [ ] Building resilience: letting children struggle (a little)
 - [ ] Tantrums and meltdowns: what's the difference and what helps
