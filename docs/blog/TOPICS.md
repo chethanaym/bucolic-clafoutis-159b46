@@ -6,7 +6,7 @@ holidays, Diwali, new school year), and add new ideas at the bottom.
 
 ## Sleep
 - [x] How much sleep children need by age → how-much-sleep-children-need (2026-10-01)
-- [ ] A calm bedtime routine for children who resist sleep
+- [x] A calm bedtime routine for children who resist sleep → bedtime-routine-children-resist-sleep (2026-11-23)
 - [ ] Teenagers and late nights: why teens' body clocks shift
 - [ ] Night-time fears and nightmares: how to reassure a child
 
