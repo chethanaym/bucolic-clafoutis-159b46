@@ -9,6 +9,7 @@
 - 2026-10-29: Added `image` and `inLanguage` to each article's structured data and a Twitter card image, so Google and social apps can show a picture with every article.
 - 2026-11-05: Added a last-updated date (`article:modified_time`) to each article and full Twitter card tags to the blog index, so shared links and search engines get complete, consistent previews.
 - 2026-11-12: Added the share-image description (`og:image:alt`) and language/region (`og:locale`, English – India) to the site-wide social-share tags.
+- 2026-11-26: Added a description (`twitter:image:alt`) for the share image on the blog index and every article, so the preview is accessible on X.
 
 ## Suggestions (need the owner's decision, ranked)
 1. Set up Google Search Console and Bing Webmaster Tools, and submit `/sitemap.xml`.

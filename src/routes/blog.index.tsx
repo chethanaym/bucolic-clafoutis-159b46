@@ -21,6 +21,7 @@ export const Route = createFileRoute('/blog/')({
       { name: 'twitter:title', content: TITLE },
       { name: 'twitter:description', content: DESCRIPTION },
       { name: 'twitter:image', content: `${SITE_URL}/logo-dark-square.png` },
+      { name: 'twitter:image:alt', content: 'Modern Psych Therapy logo' },
     ],
     links: [
       { rel: 'canonical', href: `${SITE_URL}/blog` },
